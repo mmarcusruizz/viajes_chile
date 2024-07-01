@@ -14,33 +14,179 @@
     <!-- bootstrap 5.3-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Logo Favicon -->
-        <link rel="shrotcut icon" href="assets/img/Logo Favicon.png" type="img/x-icon">
+        <link rel="shrotcut icon" href="./assets/img/viajes.svg" alt="Icono Viajes Chile">
     <!-- Enlace JQuery-->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
 </head>
+
 <body>
+    
+    <!--Navbar de bootstrap 5.3-->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body d-flex" data-bs-theme="dark" style="height: 60px;">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="#">
+            <img src="./assets/img/viajes.svg" alt="Icono Viajes Chile" height="30" class="me-2"> 
+            Viajes Chile</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">¿Quiénes Somos?</a>
+              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <!--Sección Main o Hero con carrusel de bootstrap 5.3-->
+    <section id="hero">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section> <!--Fin de la sección hero-->
+
+    <!---Sección quienes somos-->
+    <section id="quienes_somos" class="container col-md-4 d-none d-md-block"> <!-- con d-none d-md-block oculta la sección para pantallas pequeñas bootstrap 5.3-->
+        <div class="row">
+            <div class="col-md-4">
+              <i class="fas fa-plane"></i>
+              <h3>Pasajes</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, voluptatem. Sunt ullam unde velit quaerat dicta ipsum asperiores odit. Obcaecati pariatur, quod a dolores incidunt corrupti facere dolor vero quam!</p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-mountain"></i>
+              <h3>Estadía</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates libero possimus ut? Distinctio atque voluptates nobis iure, magni est, dolor provident rem molestias facere culpa impedit reprehenderit? Numquam, consequatur.</p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-route"></i>
+              <h3>Tours</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus eius consectetur inventore quam amet quisquam vel nobis, laudantium molestiae eos natus modi et at ipsam tempora! Nihil, voluptatem rem.</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Sección desatacados - 4 cards con bootstrap 5.3-->
+    <section id="destacados" class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección formulario de contacto-->
+      <section id="contacto" class="container my-5"> 
+        <h2 class="fw-bold text-center display-5">CONTACTO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deleniti dignissimos fuga in dolore debitis aliquid ullam suscipit sapiente corporis aliquam fugit totam</p>
+        <!--formulario-->
+        <form>
+            <div class="form-group">
+                <label>Nombre </label>
+                <input type="text" class="form-control" placeholder="Ingrese su nombre"> 
+           </div>
+           <div class="form-group">
+                <label>correo electrónico </label>
+                <input type="text" class="form-control" placeholder="Ingrese su e-mail"> 
+            </div>
+            <div class="form-group">
+                <label for="form-group">Mensaje</label>
+                <textarea class="form-control" placeholder="Ingrese su mensaje"></textarea>
+            </div>
+             <div class="text-start">
+                    <button type="button" class="btn btn-info text-light">Enviar</button>
+             </div>
+        </form>
+      </section>
+
+      <!-- Sección footer-->
+      <footer class="bg-dark text-light py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>VIAJES CHILE</p>
+            </div>
+            <div class="col-md-6 text-end">
+              <ul class="list-inline">
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-github"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--bootstrap js-->
+    <!--bootstrap 5.3 y archivo link js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script> 
 </body>

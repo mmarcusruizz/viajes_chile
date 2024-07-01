@@ -23,7 +23,8 @@
 <body>
     
     <!--Navbar de bootstrap 5.3-->
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body d-flex" data-bs-theme="dark" style="height: 60px;">
+    <nav class="navbar navbar-expand-lg border-body d-flex fixed-top " data-bs-theme="dark" style="height: 70px;">
+        <!--al nav se le agrega la clase "navbar-bg" al activar scroll, color definido en css-->
         <div class="container-fluid">
           <a class="navbar-brand ms-4" href="#">
             <img src="./assets/img/viajes.svg" alt="Icono Viajes Chile" height="30" class="me-2"> 
@@ -32,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
+            <div class="navbar-nav ms-auto pe-4">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               <a class="nav-link" href="#">¿Quiénes Somos?</a>
               <a class="nav-link" href="#">Destacados</a>
@@ -43,7 +44,7 @@
       </nav>
     
     <!--Sección Main o Hero con carrusel de bootstrap 5.3-->
-    <section id="hero">
+    <section id="hero" class="mb-5">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -170,12 +171,12 @@
             <div class="col-md-6">
               <p>VIAJES CHILE</p>
             </div>
-            <div class="col-md-6 text-end">
-              <ul class="list-inline">
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-github"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+            <div class="col-md-6">
+              <ul class="list-inline d-flex justify-content-end me-4">
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-github mx-2"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-linkedin-in mx-2"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-twitter mx-2"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-facebook-f mx-2"></i></a></li>
               </ul>
             </div>
           </div>

@@ -44,33 +44,51 @@
       </nav>
     
     <!--Sección Main o Hero con carrusel de bootstrap 5.3-->
-    <section id="hero" class="mb-5">
+    <section id="hero" class="mb-5">    
+        <!-- carrusel indicadores de slide-->
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
+        <div class="carousel-inner">
+        <!--imagenes del carrousel con sus captions-->
+        <div class="carousel-item h-item active">
+            <img src="./assets/img/carousel1.jpg" class="d-block w-100 h-img" alt="Paisaje desierto de atacama">
+                <div class="carousel-caption top-1 mt-1 " >
+                    <p class=" fs-3">Paquete todo incluido</p>
+                    <h1 class="display-4 fw-bolder">San Pedro de Atacama</h1>
+                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2">Reserva Ahora</button>
+                </div>
+        </div>
+        <div class="carousel-item h-item">
+            <img src="./assets/img/carousel2.jpg" class="d-block w-100 h-img" alt="Paisaje estatuas moai isla de pascua">
+                <div class="carousel-caption top-1 mt-1 " >
+                    <p class=" fs-3">Paquete todo incluido</p>
+                    <h1 class="display-4 fw-bolder">Isla de Pascua</h1>
+                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2">Reserva Ahora</button>
+                </div>     
+        </div>
+        <div class="carousel-item h-item">
+            <img src="./assets/img/carousel4.jpg" class="d-block  w-100 h-img" alt="Montañas cuernos del paine">
+                <div class="carousel-caption top-1 mt-1 " >
+                    <p class=" fs-3">Paquete todo incluido</p>
+                    <h1 class="display-4 fw-bolder">Torres del Paine</h1>
+                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2">Reserva Ahora</button>
+                </div>
+        </div>
+        </div>
+        <!--botones de carrusel next y previus-->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </section> <!--Fin de la sección hero-->
 
     <!---Sección quienes somos-->

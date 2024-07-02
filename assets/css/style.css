@@ -4,3 +4,26 @@
 
   }
 
+
+/* caption sobre el carrusel */
+
+.h-item{
+    height: 600px;
+}
+
+.h-img{
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn .cbutton  {
+    background-color: #F00; /* Red color */
+    color: white; /* Adjust text color as needed */
+    border: none; /* Remove default border */
+   
+  }

@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto pe-4">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
               <a class="nav-link" href="#quienes_somos">¿Quiénes Somos?</a>
               <a class="nav-link" href="#destacados">Destacados</a>
               <a class="nav-link" href="#contacto">Contacto</a>
@@ -44,7 +44,7 @@
       </nav>
     
     <!--Sección Main o Hero con carrusel de bootstrap 5.3-->
-    <section id="hero" class="mb-5">    
+    <section id="inicio" class="mb-5">    
         <!-- carrusel indicadores de slide-->
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -92,66 +92,70 @@
     </section> <!--Fin de la sección hero-->
 
     <!---Sección quienes somos-->
-    <section id="quienes_somos" class="container col-md-4 d-none d-md-block"> <!-- con d-none d-md-block oculta la sección para pantallas pequeñas bootstrap 5.3-->
-        <div class="row">
-            <div class="col-md-4">
-              <i class="fas fa-plane"></i>
-              <h3>Pasajes</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, voluptatem. Sunt ullam unde velit quaerat dicta ipsum asperiores odit. Obcaecati pariatur, quod a dolores incidunt corrupti facere dolor vero quam!</p>
+    <section id="quienes_somos" class="container col-md-10 d-none d-md-block text-center py-5 mb-5"> <!-- con d-none d-md-block oculta la sección para pantallas pequeñas bootstrap 5.3-->
+        <div class="row d-flex justify-content-around g-1">
+            <div class="col-md-3">
+                <div class="bg-color p-3"> <!--fondo del icono-->
+                <i class="fas fa-plane fa-2xl"></i> </div>
+                <h3 class="mt-3">Pasajes</h3>
+                <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, voluptatem. Sunt ullam unde velit quaerat dicta ipsum asperiores odit. Obcaecati pariatur, quod a dolores incidunt corrupti facere dolor vero quam!</p>
             </div>
-            <div class="col-md-4">
-              <i class="fas fa-mountain"></i>
-              <h3>Estadía</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates libero possimus ut? Distinctio atque voluptates nobis iure, magni est, dolor provident rem molestias facere culpa impedit reprehenderit? Numquam, consequatur.</p>
+            <div class="col-md-3">
+                <div class="bg-color p-3"> <!--fondo del icono-->
+                <i class="fas fa-mountain fa-2xl"></i></div>
+                <h3 class="mt-3">Estadía</h3>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates libero possimus ut? Distinctio atque voluptates nobis iure, magni est, dolor provident rem molestias facere culpa impedit reprehenderit? Numquam, consequatur.</p>
             </div>
-            <div class="col-md-4">
-              <i class="fas fa-route"></i>
-              <h3>Tours</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus eius consectetur inventore quam amet quisquam vel nobis, laudantium molestiae eos natus modi et at ipsam tempora! Nihil, voluptatem rem.</p>
+            <div class="col-md-3">
+                <div class="bg-color p-3"> <!--fondo del icono-->
+                <i class="fas fa-route fa-2xl"></i></div>
+                <h3 class="mt-3">Tours</h3>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus eius consectetur inventore quam amet quisquam vel nobis, laudantium molestiae eos natus modi et at ipsam tempora! Nihil, voluptatem rem.</p>
             </div>
           </div>
     </section>
 
     <!-- Sección desatacados - 4 cards con bootstrap 5.3-->
-    <section id="destacados" class="container">
+    <section id="destacados" class="container py-5">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!--Tarjetas-->
+          <div class="col-lg-3 col-md-4 col-sm-6"> <!--Tarjeta 01-->
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <img src="./assets/img/card1.jpg" class="card-img-top" alt="Parque Nacional Torres del Paine" style="max-height: 200px;">
+              <div class="card-body"  style="min-height: 200px;">
+                <h5 class="card-title">Parque Nacional Torres del Paine</h5>
+                <p class="card-text">Visita el lagos y glaciares en el Parque Nacional Torres del Paine en Puerto Natales Some quick example text to build on the card title and make up.</p>
+                <a href="#q" class="btn btn-primary">Cotizar</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6"> <!--Tarjeta 02-->
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="./assets/img/card2-b.jpg" class="card-img-top" alt="Piedra del Águila en el Parque Nacional Nahuelbuta" style="max-height: 200px;">
               <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Parque Nacional Nahuelbuta</h5>
+                <p class="card-text">Visita la Piedra del Águila en la ciudad de Angol Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#q" class="btn btn-primary">Cotizar</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6"> <!--Tarjeta 03-->
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="./assets/img/card3-b.jpg" class="card-img-top" alt="Volcán Calbuco, Reserva Nacional Llanquihue" style="max-height: 200px;">
               <div class="card-body">
-                <h5 class="card-title">Card title 3</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Reserva Nacional Llanquihue</h5>
+                <p class="card-text">Visita el Volcán Calbuco en Puerto Varas Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#q" class="btn btn-primary">Cotizar</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6"> <!--Tarjeta 04-->
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="./assets/img/card4-b.jpg" class="card-img-top" alt="Salar de Maricunga - Parque Nacional Nevado Tres Cruces" style="max-height: 200px;">
               <div class="card-body">
-                <h5 class="card-title">Card title 4</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Parque Nacional Nevado Tres Cruces</h5>
+                <p class="card-text"> Visita el Salar de Maricunga en Copiapó Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#q" class="btn btn-primary">Cotizar</a>
               </div>
             </div>
           </div>

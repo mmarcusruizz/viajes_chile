@@ -17,24 +17,22 @@
         <link rel="shrotcut icon" href="./assets/img/viajes.svg" alt="Icono Viajes Chile">
     <!-- Enlace JQuery-->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
 </head>
-
 <body>
-    
+
     <!--Navbar de bootstrap 5.3-->
     <nav class="navbar navbar-expand-lg border-body d-flex fixed-top " data-bs-theme="dark" style="height: 70px;">
         <!--al nav se le agrega la clase "navbar-bg" al activar scroll, color definido en css-->
         <div class="container-fluid">
           <a class="navbar-brand ms-4" href="#">
-            <img src="./assets/img/viajes.svg" alt="Icono Viajes Chile" height="30" class="me-2"> 
-            Viajes Chile</a>
+            <img src="./assets/img/viajes.svg" alt="Icono Viajes Chile" height="30" class="me-2"> Viajes Chile</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto pe-4">
-              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+              <!--Se linkean con href las secciones a donde se va a desplazar-->
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a> 
               <a class="nav-link" href="#servicios">Servicios</a>
               <a class="nav-link" href="#destacados">Destacados</a>
               <a class="nav-link" href="#contacto">Contacto</a>
@@ -59,7 +57,7 @@
                 <div class="carousel-caption top-1 mt-1 " >
                     <p class=" fs-3">Paquete todo incluido</p>
                     <h1 class="display-4 fw-bolder">San Pedro de Atacama</h1>
-                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2" data-bs-toggle="modal" data-bs-target="#reservaModal">Reserva Ahora</button> <!--data-bs-toggle="modal" Activa un modal al hacer click en el botón y  data-bs-target="#reservaModal" define la ID del modal-->
+                      <button class="btn btn-warning px-4 py-2 fs-5 mt-2" data-bs-toggle="modal" data-bs-target="#reservaModal">Reserva Ahora</button> <!--data-bs-toggle="modal" Activa un modal al hacer click en el botón y  data-bs-target="#reservaModal" define la ID del modal-->
                 </div>
         </div>
         <!-- MODAL del Botón RESERVA AHROA-->
@@ -68,12 +66,12 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="reservaModalLabel">Reserva tu viaje a San Pedro de Atacama</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p>¡Oferta por tiempo limitado!</p>
                 <p>4 noches todo incluido, barra libre y fiesta en el desierto.</p>
-                
+                <img src="./assets/img/modal.jpeg" class="d-block w-100 h-img" alt="fiesta desierto de atacama">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Me da miedo</button>
@@ -148,6 +146,7 @@
               <div class="card-body"  style="min-height: 200px;">
                 <h5 class="card-title">Parque Nacional Torres del Paine</h5>
                 <p class="card-text">Visita el lagos y glaciares en el Parque Nacional Torres del Paine en Puerto Natales Some quick example text to build on the card title and make up.</p>
+                <!--tooltip para los botones de cotizar-->
                 <a href="#q" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Bajativos gratuitos todos los días!">Cotizar</a>
               </div>
             </div>
@@ -199,6 +198,7 @@
                 <textarea class="form-control" placeholder="Ingrese su mensaje"></textarea>
             </div>
              <div class="text-start ms-2">
+              <!--Con aria-label se agrega un tooltip de accesibilidad al botón (no se muestra pero el navegador lo lee)-->
                 <button id="enviar" type="submit" class="btn btn-warning fw-semibold mt-2 px-4" aria-label="Enviar formulario de contacto">Enviar</button>
             </div>
         </form>

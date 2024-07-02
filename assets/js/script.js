@@ -23,6 +23,29 @@ $(document).ready(function() {
 
 
 
+
+
+  
+
+  // Accesibilidad del formulario de contacto
+
+  const form = document.querySelector('.myform'); // Selecciona el formulario
+  const submitButton = document.querySelector('#enviar'); // Selecciona el botón "enviar" tipo submit
+  
+  form.addEventListener('submit', (event) => {
+      event.preventDefault(); // previene los envíos de formulario por defecto
+  
+      const nameInput = form.querySelector('input[placeholder="Nombre"]'); //detecta texto en "nombre"
+      const emailInput = form.querySelector('input[placeholder="Correo electrónico"]'); //detecta texto en "email"
+  
+      if (nameInput.value === '' || emailInput.value === '') { // si alguno de los campos está vacío
+          alert('Por favor, complete los campos de nombre y correo electrónico.'); // muestra un mensaje de error
+      } else {
+        alert('¡Formulario enviado correctamente!'); // muestra un mensaje de éxito
+        form.reset(); // resetea el formulario
+      }
+  });
+
   });
 
   

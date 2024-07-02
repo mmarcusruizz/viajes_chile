@@ -59,9 +59,30 @@
                 <div class="carousel-caption top-1 mt-1 " >
                     <p class=" fs-3">Paquete todo incluido</p>
                     <h1 class="display-4 fw-bolder">San Pedro de Atacama</h1>
-                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2" >Reserva Ahora</button>
+                    <button class="btn btn-warning px-4 py-2 fs-5 mt-2" data-bs-toggle="modal" data-bs-target="#reservaModal">Reserva Ahora</button> <!--data-bs-toggle="modal" Activa un modal al hacer click en el botón y  data-bs-target="#reservaModal" define la ID del modal-->
                 </div>
         </div>
+        <!-- MODAL del Botón RESERVA AHROA-->
+        <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reservaModalLabel">Reserva tu viaje a San Pedro de Atacama</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>¡Oferta por tiempo limitado!</p>
+                <p>4 noches todo incluido, barra libre y fiesta en el desierto.</p>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Me da miedo</button>
+                <button type="button" class="btn btn-primary">Reservar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="carousel-item h-item">
             <img src="./assets/img/carousel2.jpg" class="d-block w-100 h-img" alt="Paisaje estatuas moai isla de pascua">
                 <div class="carousel-caption top-1 mt-1 " >

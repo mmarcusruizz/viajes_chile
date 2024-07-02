@@ -93,6 +93,7 @@
 
     <!---Sección quienes somos-->
     <section id="quienes_somos" class="container col-md-10 d-none d-md-block text-center py-5 mb-5"> <!-- con d-none d-md-block oculta la sección para pantallas pequeñas bootstrap 5.3-->
+        <h2 class="fw-bold text-center display-5 mb-5" style="color:#264653;">SERVICIOS</h2>
         <div class="row d-flex justify-content-around g-1">
             <div class="col-md-3">
                 <div class="bg-color p-3"> <!--fondo del icono-->
@@ -117,6 +118,7 @@
 
     <!-- Sección desatacados - 4 cards con bootstrap 5.3-->
     <section id="destacados" class="container py-5">
+        <h2 class="fw-bold text-center display-5 mb-5" style="color:#264653">DESTACADOS</h2>
         <div class="row">
             <!--Tarjetas-->
           <div class="col-lg-3 col-md-4 col-sm-6"> <!--Tarjeta 01-->
@@ -163,42 +165,39 @@
       </section>
 
       <!-- Sección formulario de contacto-->
-      <section id="contacto" class="container my-5"> 
-        <h2 class="fw-bold text-center display-5">CONTACTO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deleniti dignissimos fuga in dolore debitis aliquid ullam suscipit sapiente corporis aliquam fugit totam</p>
-        <!--formulario-->
-        <form>
-            <div class="form-group">
-                <label>Nombre </label>
-                <input type="text" class="form-control" placeholder="Ingrese su nombre"> 
-           </div>
-           <div class="form-group">
-                <label>correo electrónico </label>
-                <input type="text" class="form-control" placeholder="Ingrese su e-mail"> 
+
+      <section class="formulario p-3 mt-5 mx-5 my-5" style="background-color: #287271; border-radius: 20px;">     
+        <h2 class="text-center text-light fw-bold text-center display-5 p-5">CONTACTO</h2>  
+        <form class="p-3 mb-5 mx-5">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" placeholder="Nombre"> 
             </div>
-            <div class="form-group">
-                <label for="form-group">Mensaje</label>
+            <div class="form-group p-2">
+                <input type="text" class="form-control" placeholder="Correo electrónico"> 
+            </div>
+            <div class="form-group p-2">
                 <textarea class="form-control" placeholder="Ingrese su mensaje"></textarea>
             </div>
-             <div class="text-start">
-                    <button type="button" class="btn btn-info text-light">Enviar</button>
-             </div>
+             <div class="text-start ms-2">
+                <button type="button" class="btn btn-warning fw-semibold mt-2 px-4">Enviar</button>
+            </div>
         </form>
-      </section>
+       
+    </section>
 
       <!-- Sección footer-->
-      <footer class="bg-dark text-light py-3">
+      <footer class=" text-light py-5" style="background-color: #264653;">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 fs-5">
               <p>VIAJES CHILE</p>
             </div>
             <div class="col-md-6">
               <ul class="list-inline d-flex justify-content-end me-4">
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-github mx-2"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-linkedin-in mx-2"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-twitter mx-2"></i></a></li>
-                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-facebook-f mx-2"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-github mx-2 fa-xl"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-linkedin-in mx-2 fa-xl"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-twitter mx-2 fa-xl"></i></a></li>
+                <li class="icono rrss"><a href="#" class="text-light"><i class="fab fa-facebook-f mx-2 fa-xl"></i></a></li>
               </ul>
             </div>
           </div>
